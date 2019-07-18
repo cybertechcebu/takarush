@@ -15,3 +15,46 @@
 }
 
 /* user css */
+.info-box-date {
+    background-color: #FFF;
+    padding: 27px 13px;
+}
+.header-info {
+    background: url("../img/triangle-strip.png");
+    background-repeat: no-repeat;
+    background-position: 200px center;
+}
+.info-title {
+    background-color: #eb630f;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 36px 7px;
+    border-radius: 16px;
+    line-height: 1;
+}
+.content-wrap.begin img + div {
+    padding: 0px 50px;
+    background-color: #f9eed4;
+}
+.content-info {
+    width: 65%;
+}
+.content-info p:first-child {
+    font-size: 32px;
+    font-weight: bold;
+    color: #510707;
+}
+.content-info p:first-child span {
+    font-size: 28px;
+    letter-spacing: -2px;
+}
+.content-info p:nth-child(2) {
+    color: #510707;
+    font-size: 22px;
+}
+.content-info p:nth-child(2) span{
+    display: inline-block;
+    width: 20px;
+}
