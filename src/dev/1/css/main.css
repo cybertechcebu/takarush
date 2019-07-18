@@ -1,4 +1,17 @@
 @import url("default.css");
 @import url("general.css");
 
+/* common css */
+.contents {
+    background: url("../img/bg-img.png");
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+.contents-box {
+    width: 800px;
+    margin: 0 auto;
+}
+
 /* user css */
