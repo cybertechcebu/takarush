@@ -15,7 +15,16 @@
 }
 
 /* user css */
-.info-box-date {
+    /* colors */
+.mahogany {
+    color: #510707;
+}
+.elm {
+    color: #1F667C
+}
+    /* end colors */
+
+.info-box-event {
     background-color: #FFF;
     padding: 27px 13px;
 }
@@ -41,20 +50,33 @@
 .content-info {
     width: 65%;
 }
-.content-info p:first-child {
+.content-info .big-txt {
     font-size: 32px;
     font-weight: bold;
-    color: #510707;
 }
-.content-info p:first-child span {
+.content-info .big-txt span {
     font-size: 28px;
     letter-spacing: -2px;
 }
-.content-info p:nth-child(2) {
-    color: #510707;
+.content-info .narrow-txt {
     font-size: 22px;
 }
-.content-info p:nth-child(2) span{
+.content-info .narrow-txt .ind-space{
     display: inline-block;
     width: 20px;
+}
+.content-info .bold-txt-blue {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1f667c;
+    padding: 10px 20px;
+    text-align: center;
+    width: 350px;
+}
+.event-child:nth-child(2) .content-info .narrow-txt {
+    font-size: 28px;
+}
+.event-child:nth-child(2) .content-info {
+    width: 100%;
 }
