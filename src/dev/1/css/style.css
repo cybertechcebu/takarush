@@ -27,6 +27,8 @@
 .info-box-event {
     background-color: #FFF;
     padding: 27px 13px;
+    position: relative;
+    border-radius: 20px;
 }
 .header-info {
     background: url("../img/triangle-strip.png");
@@ -46,6 +48,9 @@
 .content-wrap.begin img + div {
     padding: 0px 50px;
     background-color: #f9eed4;
+    position: relative;
+    z-index: 2;
+    margin-top: -128px;
 }
 .content-info {
     width: 65%;
@@ -55,7 +60,7 @@
     font-weight: bold;
 }
 .content-info .big-txt span {
-    font-size: 28px;
+    font-size: 22px;
     letter-spacing: -2px;
 }
 .content-info .narrow-txt {
@@ -74,9 +79,46 @@
     text-align: center;
     width: 350px;
 }
-.event-child:nth-child(2) .content-info .narrow-txt {
+.event-child:nth-child(3) .content-info .narrow-txt {
     font-size: 28px;
 }
-.event-child:nth-child(2) .content-info {
+.event-child:nth-child(3) .content-info {
     width: 100%;
+}
+.event-logo {
+    position: absolute;
+    right: 0;
+}
+.content-wrap.begin > img {
+    position: relative;
+    z-index: 1;
+}
+.notice-event::before, .notice-event::after {
+    content: url('../img/brown-strip.png');
+    display: block;
+}
+.notice-info {
+    background-color: #F3DEB0;
+    padding: 27px 13px;
+}
+.notice-title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+}
+.notice-title::before, .notice-title::after {
+    content: url('../img/wavy-arw.png');
+    display: inline-block;
+}
+.notice-title::after {
+    transform: rotate(180deg);
+}
+.notice-title span {
+    font-size: 30px;
+}
+.notice-info p {
+    font-size: 26px;
+}
+.notice-info p span {
+    font-weight: bold;
 }
