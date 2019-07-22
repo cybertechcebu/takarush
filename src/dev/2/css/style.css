@@ -107,17 +107,24 @@ a {
 	width:370px;
 	background-color:#510707;
 	color:#e5e829;
+	position:relative;
 	border-radius:40px;
 	padding:15px;
-	font-size: 24px;
+	font-size: 23px;
 	text-align: center;
 	font-weight:bold;
 	box-shadow: 0 6px 2px -2px rgba(0, 0, 0, 0.5);
+	display:block;
+	border-style: unset;
 }
 .btn_1::after{
-	content:url('../img/arrow_y.png'); 
-	position: relative;
-    left: 10px;
+	content: "";
+	border-style: solid;
+	position:absolute;
+	top:21px;
+	right:15px;
+	border-width: 10.5px 0 10.5px 13px;
+	border-color: transparent transparent transparent #e5e829;
 }
 .btn_2{
 	margin: 30px auto 0px auto;
@@ -130,6 +137,8 @@ a {
 	text-align: center;
 	font-weight:bold;
 	box-shadow: 0 6px 2px -2px rgba(0, 0, 0, 0.5);
+	display:block;
+	border-style: unset;
 }
 .btn_2::before{
 	content:url('../img/icon-flag.png'); 
