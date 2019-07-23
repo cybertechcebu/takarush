@@ -46,7 +46,7 @@
     line-height: 1;
 }
 .content-wrap.begin img + div {
-    padding: 0px 50px;
+    padding: 0px 50px 55px;
     background-color: #f9eed4;
     position: relative;
     z-index: 2;
@@ -97,6 +97,9 @@
     content: url('../img/brown-strip.png');
     display: block;
 }
+.notice-event::after {
+    margin-top: 15px;
+}
 .notice-info {
     background-color: #F3DEB0;
     padding: 27px 13px;
@@ -109,9 +112,15 @@
 .notice-title::before, .notice-title::after {
     content: url('../img/wavy-arw.png');
     display: inline-block;
+    position: relative;
+}
+.notice-title::before {
+    top: 4px;
+    margin-right: 13px;
 }
 .notice-title::after {
     transform: rotate(180deg);
+    margin-left: 13px;
 }
 .notice-title span {
     font-size: 30px;
