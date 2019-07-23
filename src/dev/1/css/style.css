@@ -46,7 +46,7 @@
     line-height: 1;
 }
 .content-wrap.begin img + div {
-    padding: 0px 50px 55px;
+    padding: 0px 50px 45px;
     background-color: #f9eed4;
     position: relative;
     z-index: 2;
@@ -130,4 +130,112 @@
 }
 .notice-info p span {
     font-weight: bold;
+}
+.content-wrap.second {
+    background: url('../img/or-bg.png');
+    background-repeat: repeat;
+}
+.banner-wrap {
+    width: 100%;
+    margin-bottom: 70px;
+}
+.banner-wrap::before, .banner-wrap::after {
+    content: url('../img/wavy-arw-str.png');
+    display: block;
+}
+.banner-wrap > div::before, .banner-wrap > div::after {
+    content: url('../img/lightbr-str.png');
+    display: block;
+}
+.banner-wrap > div img {
+    display: block;
+    margin: 0 auto;
+}
+.treasure-hunt-wrap {
+    padding: 0px 25px;
+}
+.treasure-hunt-wrap .top-edge {
+    display: block;
+    overflow: hidden;
+}
+.treasure-hunt-info {
+    background-color: #f9eed4;
+    padding: 90px 25px;
+}
+.top-edge img {
+    position: relative;
+    bottom: -7px;
+}
+.th-txt-bnr img {
+    display: block;
+    margin: 0 auto;
+}
+.treasure-hunt-info .reg-txt {
+    font-size: 26px;
+    line-height: 2;
+}
+.th-txt-bnr + .reg-txt {
+    line-height: 2;
+}
+.trh-chas img {
+    display: block;
+    margin: 0 auto;
+}
+.trh-note {
+    background-color: #e5e829;
+    padding: 30px;
+    border-radius: 20px;
+}
+.trh-note div p, .trh-note div img {
+    display: inline-block;
+}
+.trh-note div p {
+    width: 64%;
+    vertical-align: top;
+    float: left;
+}
+.trh-note div img {
+    float: right;
+}
+.trh-note .reg-txt span {
+    font-weight: bold;
+}
+.trh-note > div:first-child {
+    overflow: hidden;
+}
+.trh-note > div:nth-child(2){
+    text-align: center;
+}
+.trh-note div a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    color: #e5e829;
+    background-color: #510707;
+    border-radius: 32px;
+    padding: 15px 34px;
+    width: 280px;
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.3);
+}
+.btn-tri {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 0 9px 15px;
+    border-color: transparent transparent transparent rgba(229, 232, 41, 1);
+}
+.trh-overview .big-title::before, .trh-overview .big-title::after {
+    content: url('../img/org-tri-long.png');
+    display: block;
+    line-height: 0.6;
+}
+.trh-overview .big-title {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
 }
