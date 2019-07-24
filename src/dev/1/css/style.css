@@ -20,10 +20,23 @@
     color: #510707;
 }
 .elm {
-    color: #1F667C
+    color: #1F667C;
+}
+.punch {
+    color: #DB2E35;
+}
+.christine {
+    color: #E15D0E;
 }
     /* end colors */
-
+    /* helper css */
+.lh2 {
+    line-height: 2;
+}
+.fs24 {
+    font-size: 24px;
+}
+    /* end helper css */
 .info-box-event {
     background-color: #FFF;
     padding: 27px 13px;
@@ -51,6 +64,9 @@
     position: relative;
     z-index: 2;
     margin-top: -128px;
+}
+.content-wrap.begin {
+    margin-bottom: 72px;
 }
 .content-info {
     width: 65%;
@@ -134,6 +150,7 @@
 .content-wrap.second {
     background: url('../img/or-bg.png');
     background-repeat: repeat;
+    padding-top: 36px;
 }
 .banner-wrap {
     width: 100%;
@@ -152,7 +169,7 @@
     margin: 0 auto;
 }
 .treasure-hunt-wrap {
-    padding: 0px 25px;
+    padding: 0 25px 92px;
 }
 .treasure-hunt-wrap .top-edge {
     display: block;
@@ -228,6 +245,9 @@
     border-width: 9px 0 9px 15px;
     border-color: transparent transparent transparent rgba(229, 232, 41, 1);
 }
+.trh-overview {
+    margin-top: 90px;
+}
 .trh-overview .big-title::before, .trh-overview .big-title::after {
     content: url('../img/org-tri-long.png');
     display: block;
@@ -242,11 +262,117 @@
 .trh-reviews {
     background-color: #e5e927;
     padding: 3px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: 123px;
 }
 .trh-reviews .big-title {
     background: url('../img/say.png') 70px 16px no-repeat;
     padding: 20px;
+    overflow: visible;
+    position: relative;
+}
+.trh-reviews .big-title img{
+    position: absolute;
+    top: -48px;
+    right: 20px;
+    z-index: 1;
 }
 .rvw-contents {
     background-color: #FFF;
+    padding: 42px 24px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+}
+.rvw-head {
+    background-color: #510707;
+    color: #FFF;
+    padding: 12px 24px;
+    overflow: hidden;
+}
+.rvw-head span:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+}
+.rvw-head span:last-child {
+    font-size: 20px;
+    float: right;
+}
+.rvw-comment {
+    padding: 30px 25px;
+}
+.rvw-comment p {
+    font-size: 26px;
+}
+.to-rlist {
+    font-size: 20px;
+}
+.ovw-contents {
+    padding: 0px 10px;
+}
+.ovw-box .left, .ovw-box .right {
+    display: inline-block;
+    font-size: 26px;
+}
+.ovw-box {
+    border-bottom: solid 1px;
+    border-color: #c6a896;
+    padding: 42px 0;
+}
+.ovw-box:last-child {
+    border: none;
+}
+.ovw-box .left {
+    width: 27%;
+}
+.ovw-box .right {
+    width: 72%;
+}
+.blk-spc {
+    display: inline-block;
+    width: 26px;
+}
+.rnd-blt {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #510707;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.lil-ylws:not(:last-child) {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.lil-ylw-bx {
+    width: 214px;
+    display: inline-block;
+    text-align: center;
+    background-color: #e4e821;
+    padding: 3px;
+}
+.lil-ylw-bx.solo {
+    width: 98.6%;
+}
+.lil-ylw-bx > div:first-child {
+    padding: 7px 0px;
+}
+.lil-ylw-bx > div:last-child {
+    background-color: #FFF;
+    padding: 12px 0px;
+}
+.lil-ylw-bx > div:last-child > div {
+    width: 100%;
+    height: 65px;
+    position: relative;
+}
+.lil-ylw-bx > div:last-child img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
