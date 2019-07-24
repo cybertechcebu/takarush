@@ -74,13 +74,11 @@ a {
 .outline-o::before{
 	content:url('../img/outline_o.png'); 
 	position:relative;
-	left:-45px;
 	
 }
 .outline-o::after{
 	content:url('../img/outline_o.png'); 
 	position:relative;
-	left:-45px;
 	
 }
 .outline-o p{
@@ -89,7 +87,14 @@ a {
 	text-align:center;
 	padding:20px 0px 20px 0px;
 }
-
+.outline-matrix::before{
+	content:url('../img/outline_matrix.png'); 
+	position:relative;
+}
+.outline-matrix::after{
+	content:url('../img/outline_matrix.png'); 
+	position:relative;
+}
 /* color */
 .orange{
 	color:#ec6312 !important; 
@@ -124,6 +129,7 @@ a {
 /* Font Size */
 .fs27{font-size:27px !important;}
 .fs26{font-size:26px !important;}
+.fs28{font-size:28px !important;}
 .fs35{font-size:35px !important;}
 
 /* Margin */
@@ -236,4 +242,12 @@ a {
 	text-align:center;
 	color:#510707;
 	font-size:18px;
+}
+.bor-con{
+	margin:20px 20px 20px 20px;
+	color:#510707;
+	border:2px solid #510707;
+	padding:30px;
+	font-size:18px;
+	line-height:2.3em;
 }
