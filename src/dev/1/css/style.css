@@ -233,9 +233,20 @@
     display: block;
     line-height: 0.6;
 }
-.trh-overview .big-title {
+.trh-overview .big-title, .trh-reviews .big-title {
     font-size: 60px;
     font-weight: bold;
     text-align: center;
     overflow: hidden;
+}
+.trh-reviews {
+    background-color: #e5e927;
+    padding: 3px;
+}
+.trh-reviews .big-title {
+    background: url('../img/say.png') 70px 16px no-repeat;
+    padding: 20px;
+}
+.rvw-contents {
+    background-color: #FFF;
 }
