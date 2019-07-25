@@ -1,14 +1,816 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Takarush #</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-</head>
-<body>
-    <p>TAKARUSH</p>
-</body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/import.css"
+    />
+    <script src="./js/main.js"></script>
+    <style>
+      ul {
+        list-style: none;
+      }
+      .category > ul.list {
+        display: table;
+      }
+      .category > ul.list > li > * {
+        font-size: 100%;
+        display: table-cell;
+      }
+      .category > ul.list > li .left {
+        text-align: right;
+        white-space: pre;
+        padding: 0 5px 5px 0;
+      }
+      .category > ul.list > li > .right {
+        padding: 0 0 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contents">
+      <div class="contents-box">
+        <div class="content-wrap begin">
+          <img src="./img/title-banner.png" alt="title-baner" />
+          <div>
+            <div class="info-box-event">
+              <div class="event-logo">
+                <img src="./img/event-logo.png" alt="event-logo" />
+              </div>
+              <div class="event-child">
+                <div class="header-info">
+                  <div class="info-title">開催期間</div>
+                </div>
+                <div class="content-info ml15 mt20">
+                  <p class="big-txt mahogany ml5">
+                    8/1<span>（木）</span>～9/23<span>（月・祝）</span>
+                  </p>
+                  <p class="narrow-txt mahogany ml5 mt5">
+                    ※三内丸山遺跡 第４月曜日は<br /><span class="ind-space"
+                      >&nbsp;</span
+                    >休業となります。（祝日の場合は翌日）
+                  </p>
+                  <div class="bold-txt-blue mt25">
+                    期間限定！小牧野遺跡コース
+                  </div>
+                  <p class="big-txt elm ml5 mt15">
+                    8/10<span>（土）</span>～8/25<span>（日）</span>
+                  </p>
+                </div>
+              </div>
+              <div class="event-child mt35">
+                <div class="header-info">
+                  <div class="info-title">開催場所</div>
+                </div>
+                <div class="content-info ml30 mt20">
+                  <p class="narrow-txt mahogany mb10">青森県　青森市</p>
+                  <p class="narrow-txt mahogany">
+                    特別史跡 三内丸山遺跡 ／
+                    <span class="elm">史跡 小牧野遺跡</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="notice-event mt35">
+              <div class="notice-info">
+                <div class="notice-title mahogany mb25">
+                  イベント<span>からの</span>お知らせ
+                </div>
+                <p class="mahogany ml30">2019.07.04<br />公式サイト公開！</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-wrap second">
+          <div class="banner-wrap">
+            <div>
+              <img src="./img/event-info-banner.png" alt="event-info-banner" />
+            </div>
+          </div>
+          <div class="treasure-hunt-wrap">
+            <div class="top-edge">
+              <img src="./img/cream-tri-strip.png" alt="cream-tri-strip" />
+            </div>
+            <div class="treasure-hunt-info">
+              <div class="th-txt-bnr mb25">
+                <img src="./img/th-txt-bnr.png" alt="th-txt-bnr" />
+              </div>
+              <p class=" reg-txt mahogany">
+                このイベントは、青森県青森市にある「特別史跡
+                三内丸山遺跡」と「史跡
+                小牧野遺跡」で、あなたが実際に暗号を解き、隠された宝物を探し出すリアル宝探しイベントです。
+              </p>
+              <div class="trh-chas mt35 mb35">
+                <img src="./img/trh-chas.png" alt="trh-chas" />
+              </div>
+              <div class="trh-note">
+                <div>
+                  <p class="reg-txt mahogany">
+                    さらに、青森県縄文遺跡郡をめぐる<span>スタンプラリー</span>も開催中！参加すると応募できる賞品が増えるよ！詳細は宝の地図（参加冊子）を確認しよう！
+                  </p>
+                  <img src="./img/trh-prz-logo.png" alt="trh-prz-logo" />
+                </div>
+                <div>
+                  <a href="#"
+                    >宝の地図はコチラ<span class="btn-tri ml25"></span
+                  ></a>
+                </div>
+              </div>
+              <div class="trh-overview">
+                <div class="big-title mahogany"><span>概要</span></div>
+                <div class="ovw-contents">
+                  <div class="ovw-box">
+                    <div class="left">
+                      <p class="mahogany fb">タイトル</p>
+                    </div>
+                    <div class="right">
+                      <p class="mahogany">ドキドキ遺跡探検隊</p>
+                    </div>
+                  </div>
+                  <div class="ovw-box">
+                    <div class="left vt">
+                      <p class="mahogany fb">コース紹介</p>
+                    </div>
+                    <div class="right lh2">
+                      <div class="w-org mb60">
+                        <p class="punch">
+                          ※２コースの開催期間や参加可能な時<br /><span
+                            class="blk-spc"
+                            >&nbsp;</span
+                          >間　は異なります。ご注意ください。
+                        </p>
+                        <button class="btn-ac orng mb30">
+                          <span class="inner"
+                            >三内丸山遺跡コース<span class="arw-dwn ml25"></span
+                          ></span>
+                        </button>
+                        <p class="ovw-subt christine">【開催期間】</p>
+                        <p class="mahogany">
+                          2019年8月1日（木）～9月23日（月・祝）
+                        </p>
+                        <p class="mahogany fs24">
+                          ※三内丸山遺跡は毎月第４月曜日は休業とな<br /><span
+                            class="blk-spc"
+                            >&nbsp;</span
+                          >ります。（祝日の場合は翌日）
+                        </p>
+                        <p class="ovw-subt christine">【開催場所】</p>
+                        <p class="mahogany">青森県青森市三内字丸山305</p>
+                        <p class="mahogany">特別史跡 三内丸山遺跡</p>
+                        <a href="#" class="gmap-link">Google Map</a>
+                        <p class="ovw-subt christine">【参加可能時間】</p>
+                        <p class="mahogany">9：00～18：00</p>
+                        <p class="ovw-subt christine">【発見報告所について】</p>
+                        <p class="mahogany">
+                          <span class="dia-sq mr5"></span>施設名<br /><span
+                            class="blk-spc"
+                            >&nbsp;</span
+                          >三内丸山遺跡・縄文時遊館内<br /><span class="blk-spc"
+                            >&nbsp;</span
+                          >入場口付近
+                        </p>
+                        <p class="mahogany">
+                          <span class="dia-sq mr5"></span
+                          >報告受付時間　9：00～18：00<br /><span
+                            class="blk-spc"
+                            >&nbsp;</span
+                          >（最終入館は17：30まで）
+                        </p>
+                        <p class="mahogany">
+                          <span class="dia-sq mr5"></span>休業日<br /><span
+                            class="blk-spc"
+                            >&nbsp;</span
+                          >毎月第4月曜日（※祝日の場合は翌日)
+                        </p>
+                      </div>
+                      <div class="w-blu">
+                        <button class="btn-ac blu mb30">
+                          <span class="inner"
+                            ><span class="fs26 anakiwa">期間限定！</span>
+                            小牧野遺跡コース<span class="arw-dwn ml25"></span
+                          ></span>
+                        </button>
+                        <p class="ovw-subt elm">【開催期間】</p>
+                        <p class="mahogany">
+                          2019年8月10日（土）～8月25日（日）
+                        </p>
+                        <p class="ovw-subt elm">【開催場所】</p>
+                        <p class="mahogany">青森市大字野沢字小牧野41</p>
+                        <p class="mahogany">史跡　小牧野遺跡</p>
+                        <a href="#" class="gmap-link">Google Map</a>
+                        <p class="ovw-subt elm">【参加可能時間】</p>
+                        <p class="mahogany">9：00～17：00</p>
+                        <p class="ovw-subt elm">【発見報告所について】</p>
+                        <p class="mahogany">
+                          <span class="dia-sq-cal mr5"></span>施設名　
+                          小牧野の森・どんぐりの家
+                        </p>
+                        <p class="mahogany">
+                          <span class="dia-sq-cal mr5"></span
+                          >報告受付時間　9：00～17：00
+                        </p>
+                        <p class="mahogany">
+                          <span class="dia-sq-cal mr5"></span>休業日　なし
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ovw-box">
+                    <div class="left vt">
+                      <p class="mahogany fb">参加費</p>
+                    </div>
+                    <div class="right">
+                      <p class="mahogany lh2">
+                        無料<br />※別途、特別史跡 三内丸山遺跡の入場<br /><span
+                          class="blk-spc"
+                          >&nbsp;</span
+                        >料　かかります。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="ovw-box">
+                    <div class="left vt">
+                      <p class="mahogany fb">チャレンジ<br />パラメーター</p>
+                    </div>
+                    <div class="right">
+                      <p class="mahogany lh2">【難易度】　　 ★★☆☆☆☆</p>
+                      <p class="mahogany lh2">【ボリューム】 ★★★☆☆☆</p>
+                      <p class="mahogany lh2">【距離】　　　 ★~★★★☆☆☆</p>
+                      <p class="mahogany lh2">
+                        &nbsp;&nbsp;<u>※チャレンジパラメーターとは？&gt;&gt;</u>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="ovw-box">
+                    <div class="left vt">
+                      <p class="mahogany fb">ゲーム<br />システム</p>
+                    </div>
+                    <div class="right">
+                      <div class="lil-ylws">
+                        <div class="lil-ylw-bx mahogany fl">
+                          <div class="fb">場所</div>
+                          <div>
+                            <div>
+                              <img src="./img/lil-tree.png" alt="lil-tree" />
+                            </div>
+                            <p class="fb mt10">屋外</p>
+                          </div>
+                        </div>
+                        <div class="lil-ylw-bx mahogany fr">
+                          <div class="fb">対象年齢</div>
+                          <div>
+                            <div>
+                              <img src="./img/lil-book.png" alt="lil-book" />
+                            </div>
+                            <p class="fb mt10">6歳～</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="lil-ylws">
+                        <div class="lil-ylw-bx mahogany fl">
+                          <div class="fb">人数</div>
+                          <div>
+                            <div>
+                              <img src="./img/lil-man.png" alt="lil-man" />
+                            </div>
+                            <p class="fb mt10">１人以上</p>
+                          </div>
+                        </div>
+                        <div class="lil-ylw-bx mahogany fr">
+                          <div class="fb">制限時間</div>
+                          <div>
+                            <div>
+                              <img
+                                src="./img/lil-hrglass.png"
+                                alt="lil-hrglass"
+                              />
+                            </div>
+                            <p class="fb mt10">なし</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="lil-ylws">
+                        <div class="lil-ylw-bx solo mahogany">
+                          <div class="fb">想定所要時間</div>
+                          <div>
+                            <div>
+                              <img src="./img/lil-clock.png" alt="lil-clock" />
+                            </div>
+                            <p class="fb mt10">三内丸山遺跡コース　2時間</p>
+                            <p class="fb mt10">小牧野遺跡コース　　30分</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ovw-box">
+                    <div class="left vt">
+                      <p class="mahogany fb">持ち物</p>
+                    </div>
+                    <div class="right">
+                      <p class="mahogany lh2">
+                        <span class="rnd-blt"></span>宝の地図（参加冊子）
+                      </p>
+                      <p class="mahogany lh2">
+                        <span class="rnd-blt"></span>筆記用具
+                      </p>
+                      <p class="mahogany lh2">
+                        <span class="rnd-blt"></span>歩きやすい靴
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="trh-reviews">
+              <div class="big-title mahogany">
+                参加者の声<img src="./img/cross-relic.png" alt="cross-relic" />
+              </div>
+              <div class="rvw-contents">
+                <ul>
+                  <li>
+                    <div class="rvw-head">
+                      <span>ああああああああさん</span
+                      ><span>投稿日：2019年09月26日</span>
+                    </div>
+                    <div class="rvw-comment mahogany">
+                      <p>
+                        ああああああああああああああああああああああああああああああああああああああああああああああああ
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="rvw-head">
+                      <span>ああああああああさん</span
+                      ><span>投稿日：2019年09月26日</span>
+                    </div>
+                    <div class="rvw-comment mahogany">
+                      <p>
+                        ああああああああああああああああああああああああああああああああああああああああああああああああ
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <a href="#" class="to-rlist mahogany mt25 fr">クチコミ一覧へ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-wrap">
+          <div class="center-img triangle ">
+            <div class="outline">
+              <img src="./img/banner1.png" />
+            </div>
+          </div>
+          <div class="context">
+            <p>
+              やあ！
+              僕たちはこの遺跡群を世界遺産にするべく日々研究している遺跡探検隊！<br />
+              メンバーはリーダーである僕、ジョーと、怒ると怖いマルコ、そして頭がいいサンちゃんだ。
+            </p>
+            <div class="cf">
+              <div class="center-img cha-1">
+                <img src="./img/cha_1.png" />
+                <p class="green fb">マルコ</p>
+              </div>
+              <div class="center-img cha-2">
+                <img src="./img/cha_2.png" />
+                <p class="green fb">ジョー</p>
+              </div>
+              <div class="center-img cha-3">
+                <img src="./img/cha_3.png" />
+                <p class="green fb">サンちゃん</p>
+              </div>
+            </div>
+
+            <p>
+              今日はいつものように遺跡に調査に来たんだけど、突然見たこともない不思議な2人の<br />
+              女の子が現れたんだ。2人は鏡に映したみたいにそっくりだ。<br />
+              <span class="fb orange">「遺跡を守る２つの勾玉を探して…」</span
+              ><br />
+              女の子は口をそろえてそう言うと消えてしまった。そしてそこには一枚の不思議な地図が残されていた。
+            </p>
+            <div class="center-img">
+              <img src="./img/img_01.png" />
+            </div>
+            <p>
+              <span class="pink fb">「これって宝の地図じゃない！？」</span
+              ><br />
+              マルコが目を輝かせた。<br />
+              <span class="violet fb"
+                >「世界遺産の決め手になるかもしれない！」</span
+              ><br />
+              サンちゃんが大きな声で叫んだ。
+            </p>
+            <div class="center-img">
+              <img src="./img/img_02.png" />
+            </div>
+            <p>
+              宝の地図を見てみると、どうやら暗号のようなものが描かれていてなんだかさっぱりわからない。どうしよう。このままだと宝が見つけられないよ！そうだ！君も手伝ってくれない？<br />
+              <span class="blue-g fb">僕たちと一緒に宝探しをしようよ！</span>
+            </p>
+            <div class="center-img">
+              <img src="./img/img_03.png" />
+            </div>
+            <p class="text-right">※このストーリーはフィクションです。</p>
+          </div>
+        </div>
+        <div class="content-wrap-o">
+          <div class="center-img triangle">
+            <div class="outline">
+              <img src="./img/banner2.png" />
+            </div>
+          </div>
+          <div class="context cf">
+            <div class="col-lg-6 icon1">
+              <p>
+                宝の地図を入手しよう！２つのコースに挑戦できるよ。それぞれの開催期間と参加可能時間に注意しよう！
+              </p>
+            </div>
+            <div class="col-lg-6 icon2">
+              <p>
+                ＜手がかり＞がわかったら、ナゾを解こう！宝物のありかがわかるよ。
+              </p>
+            </div>
+            <div class="col-lg-12">
+              <p>
+                宝の地図(参加冊子)の<br />
+                入手方法は<span class="tdu">コチラ＞＞</span>
+              </p>
+            </div>
+            <div class="col-lg-6 icon3">
+              <p>
+                宝物を発見したら、必要なキーワードを発見報告所に報告しよう！
+              </p>
+            </div>
+            <div class="col-lg-6 icon4">
+              <p>
+                報告すると、発見者賞がもらえるよ。さらに抽選で賞品が当たるチャンス！
+              </p>
+            </div>
+          </div>
+          <div class="yellow-bg">
+            <div class="yellow-content">
+              <p class="fb">
+                さらに、青森県縄文遺跡郡をめぐるスタンプラリーも開催中！参加すると応募できる賞品が増えるよ！詳細は宝の地図（参加冊子）を確認しよう！
+              </p>
+            </div>
+            <button class="btn-1">宝の地図の入手方法はコチラ</button>
+          </div>
+        </div>
+        <div class="content-wrap">
+          <div class="center-img triangle ">
+            <div class="outline">
+              <img src="./img/banner3.png" />
+            </div>
+          </div>
+          <div class="context">
+            <p>
+              宝の地図(参加冊子)入手方法は、【現地での無料配布】、及び、本サイト上での【無料ダウンロード】があります。
+            </p>
+            <div class="center-img">
+              <img src="./img/img_04.png" />
+            </div>
+            <div class="wg-bg">
+              <span class="fb">◆宝の地図（参加冊子）配布場所</span><br />
+              【配布開始日】8/1～なくなり次第終了<br />
+              ・特別史跡　三内丸山遺跡<br />
+              ・史跡　小牧野遺跡
+            </div>
+            <div class="wg-bg">
+              <span class="fb">◆宝の地図（参加冊子）無料ダウンロード</span
+              ><br />
+              【ダウンロード開始日】8/1～
+              <button class="btn-2">
+                宝の地図をダウンロード<br />（参加冊子）
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="content-wrap-o">
+          <div class="center-img triangle">
+            <div class="outline">
+              <img src="./img/banner1.png" />
+            </div>
+          </div>
+          <div class="center-img">
+            <img src="./img/img_01.png" />
+          </div>
+          <div class="context cf">
+            <!-- Header One -->
+            <div class="header-one">三内丸山遺跡コース　クリア賞</div>
+            <div class="sub-header">応募条件</div>
+            <p class="fs26 ml20 fb orange">
+              三内丸山遺跡コースの【発見を証明するキーワード】
+            </p>
+            <div class="center-img">
+              <img src="./img/img_02.png" class="b-image-one" />
+            </div>
+            <p class="fb orange ml87">抽選2名様</p>
+            <p class="fb orange ml87 fs35">Nintendo Switch</p>
+            <!-- Header Two -->
+            <div class="header-two">小牧野遺跡コース　クリア賞</div>
+            <div class="sub-header-two">応募条件</div>
+            <p class="aqua fb ml20">
+              小牧野遺跡コースの【発見を証明するキーワード】
+            </p>
+            <div class="center-img">
+              <img src="./img/img_03.png" class="b-image-two" />
+            </div>
+            <p class="fb aqua ml87">抽選3名様</p>
+            <p class="fb aqua ml87 fs35">エポック社おもちゃ2種セット</p>
+            <!-- Header Three -->
+            <div class="header-three">スタンプラリー賞</div>
+            <div class="sub-header-three">応募条件</div>
+            <p class="fb ml20">各スタンプに書かれたキーワード３つ以上</p>
+            <div class="block-one">
+              <img src="./img/img_04.png" />
+            </div>
+            <div class="block-two">
+              <img src="./img/img_05.png" />
+            </div>
+            <div class="block-three">
+              <img src="./img/img_06.png" />
+            </div>
+            <div class="block-con">
+              <span class="fb">抽選5名様</span><br />
+              JAアオレン<br />「希望の雫」<br />１ケース
+            </div>
+            <div class="block-con">
+              <span class="fb">抽選10名様</span><br />
+              「八戸サバ缶バー」<br />6缶セット
+            </div>
+            <div class="block-con">
+              <span class="fb">抽選15名様</span><br />
+              晴天の霹靂5kg
+            </div>
+          </div>
+          <div class="context cf mt60">
+            <div class="outline-o">
+              <p>各コース別発見者賞</p>
+            </div>
+            <p class="fb text-center orange mt35 fs35">
+              三内丸山遺跡コース 発見者賞
+            </p>
+            <div class="center-img">
+              <img src="./img/img_07.png" />
+            </div>
+            <div class="outline-matrix">
+              <p class="fb text-center aqua mt35 fs35">小牧野遺跡コース</p>
+              <div class="center-img">
+                <img src="./img/img_08.png" />
+              </div>
+            </div>
+            <div class="bor-con">
+              <span class="fb fs26"
+                >【タカラッシュ！デジタルアイテムとは？】</span
+              ><br />
+              タカラッシュ！のサイト上でコレクションできる「宝物」のデジタル画像です。<br />
+              <span class="tdu">詳しく見る＞＞</span>
+            </div>
+            <p class="brown ml20 mr20">
+              ※賞品の応募は、宝の地図１枚につき、お一人様1回のみです。<br />
+              ※賞品画像はイメージです。<br />
+              ※当選発表は賞品の発送をもってかえさせていただきます。
+            </p>
+          </div>
+        </div>
+        <div class="content-wrap">
+          <div class="border-main border-maroon">
+            <img src="img/outline_orange.png" />
+            <div class="white-frame pt30 pb30">
+              <img class="img-center" src="img/Htext_1.png" />
+            </div>
+            <img src="img/outline_orange.png" />
+            <div class="content one">
+              <img class="img-responsive" src="img/img_houses.png" />
+              <p class="text-space">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ<u
+                  >公式サイトはコチラ＞＞テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</u
+                >
+              </p>
+            </div>
+
+            <img src="img/outline_orange.png" />
+            <div class="white-frame pt30 pb30">
+              <img class="img-center" src="img/Htext_2.png" />
+            </div>
+            <img src="img/outline_orange.png" />
+            <div class="content one">
+              <img class="img-responsive" src="img/img_rocks.png" />
+              <p class="text-space">
+                <u
+                  >テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ公式サイトはコチラ＞＞</u
+                >
+              </p>
+            </div>
+
+            <img src="img/outline_orange.png" />
+            <div class="white-frame pt30 pb30">
+              <img class="img-center" src="img/Htext_3.png" />
+            </div>
+            <img src="img/outline_orange.png" />
+            <div class="content one">
+              <img class="img-responsive" src="img/img_video_clip.png" />
+              <span class="img-inline">
+                <img class="pr35" src="img/img_video_clip_twitter.png" />
+                <img class="pr35" src="img/img_video_clip_fb.png" />
+                <img class="pr35" src="img/img_video_clip_line.png" />
+                <img class="pr35" src="img/img_video_clip_ig.png" />
+              </span>
+              <p class="text-space">
+                映画や小説の中のアドベンチャー「宝探し」の冒険を現実の世界で体験できる『リアル宝探し』を企画・制作。2002年より有名テーマパークや人気観光地、TV番組などに『リアル宝探し』を提供し、現在では年間200万人を熱狂させる人気エンターテインメントとなっています。これからも『リアル宝探し』を通じ、驚きと発見の感動を提供していきます。<br /><u
+                  >公式サイトはコチラ＞＞</u
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="border-main bg-maroon">
+            <img class="extend-img" src="img/outline_gray.png" />
+            <div class="pt15 pb15">
+              <p class="heading-text">参加の注意</p>
+            </div>
+            <img class="extend-img" src="img/outline_gray.png" />
+            <div class="content two">
+              <ul class="bullet">
+                <li>
+                  発見報告をする際は、発見報告所になっている施設
+                  の受付時間や営業時間などをあらかじめご確認ください。
+                </li>
+                <li>
+                  暑い時期には熱中症対策をするなど環境や季節、天候に応じた準備をして宝探しにご参加ください。
+                </li>
+                <li>
+                  夜間、台風や警報が出ているなどの荒天時、その他自身や他の方に危険が及ぶと判断されるような状況での捜索は絶対に行なわないでください。
+                </li>
+                <li>
+                  イベント実施中の事故や怪我、器物破損などで発生した損害については、参加者個人の責任となりますので、ご理解の上ご参加ください。
+                </li>
+                <li>
+                  本イベントの設置物は動かしたり、いたずらしたりしないでください。
+                </li>
+                <li>
+                  本イベントの設置物は下の場所にはありません。（立入禁止の場所／水の中／土の中／危険な場所/有料エリア）
+                </li>
+                <li>発見者賞のお渡しは、参加キット1枚につき1回のみです。</li>
+                <li>ルールを守り安全に十分注意してご参加ください。</li>
+                <li>
+                  本イベントの解答や解説をSNSやブログ等で公表しないでください。（話題にするのは問題ありません。）<br />各イベントのクチコミに投稿される場合も、ネタバレにご注意の上投稿してください。
+                </li>
+                <li>その他ご不明点がある方はコチラでご確認ください。</li>
+              </ul>
+            </div>
+            <img src="img/outline_gray.png" />
+            <div class="pt15 pb15">
+              <p class="heading-text">Q&A</p>
+            </div>
+            <img src="img/outline_gray.png" />
+            <div class="white-frame pt30 pb30 mt60 ml30 mr30 mb40">
+              <p class="qtxt-color pt30 pl20 pr20">
+                <b>Q：</b>1人でも参加できますか？
+              </p>
+              <p class="atxt-color pt40 pl20 pr20 pb30">
+                <b>A：</b>もちろんおひとり様でも複数人でもお楽
+                しみいただけます。ただし、発見者賞のお渡しは宝の地図（参加冊子）１枚につき１回のみです。
+              </p>
+            </div>
+            <div class="white-frame pt30 pb30 mt60 ml30 mr30 mb40">
+              <p class="qtxt-color pt30 pl20 pr20">
+                <b>Q：</b>参加費用はいくらになりますか？
+              </p>
+              <p class="atxt-color pt40 pl20 pr20 pb30">
+                <b>A：</b
+                >無料ですが、三内丸山コースに参加する場合は別途入場料がかかります。
+              </p>
+            </div>
+            <div class="white-frame pt30 pb30 mt60 ml30 mr30 mb40">
+              <p class="qtxt-color pt30 pl20 pr20">
+                <b>Q：</b>その日に報告しなければいけないですか？
+              </p>
+              <p class="atxt-color pt40 pl20 pr20 pb30">
+                <b>A：</b>開催期間中であれば、別日での報告が可能です。
+              </p>
+            </div>
+            <div class="white-frame pt30 pb30 mt60 ml30 mr30 mb40">
+              <p class="qtxt-color pt30 pl20 pr20">
+                <b>Q：</b>子供でも楽しめますか？
+              </p>
+              <p class="atxt-color pt40 pl20 pr20 pb30">
+                <b>A：</b
+                >小学校中学年レベルの日本語を読み書きできる方、簡単な英単語がわかる方でしたら、お楽しみいただけます。
+              </p>
+            </div>
+            <div class="white-frame pt30 pb30 mt60 ml30 mr30 mb40">
+              <p class="qtxt-color pt30 pl20 pr20">
+                <b>Q：</b>大人だけでも参加できますか？
+              </p>
+              <p class="atxt-color pt40 pl20 pr20 pb30">
+                <b>A：</b
+                >難易度易しめの宝探しになりますが、大人の方でもお楽しみいただけます。
+              </p>
+            </div>
+          </div>
+
+          <div class="border-main bg-orange-tile border-cartoons">
+            <div class="cartoons">
+              <div class="white-border pt25 pb25">
+                <span class="icon-inline">
+                  <img class="pr100" src="img/icon_twitter.png" />
+                  <img class="pr100" src="img/icon_fb.png" />
+                  <img src="img/icon_line.png" />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-one">
+          <div class="contents-box">
+            <div class="content-wrap pt150">
+              <img class="extend-img" src="img/outline_orange.png" />
+              <div class="white-frame pt15 pb15">
+                <p class="htext-footer">メニュー</p>
+              </div>
+              <img class="extend-img" src="img/outline_orange.png" />
+              <div class="row-footer mt60">
+                <div class="white-frame shadow column-footer mr35">
+                  <img class="img-center pt30 pb20" src="img/img_box1.png" />
+                  <p class="caption-text">トップ</p>
+                </div>
+                <div class="white-frame shadow column-footer mr35">
+                  <img class="img-center pt30 pb20" src="img/img_box2.png" />
+                  <p class="caption-text">イベント情報</p>
+                </div>
+                <div class="white-frame shadow column-footer">
+                  <img class="img-center pt25 pb10" src="img/img_box3.png" />
+                  <p class="caption-text">あらすじ</p>
+                </div>
+              </div>
+              <div class="row-footer">
+                <div class="white-frame shadow column-footer mr35">
+                  <img class="img-center pt25 pb5" src="img/img_box4.png" />
+                  <p class="caption-text">参加方法</p>
+                </div>
+                <div class="white-frame shadow column-footer mr35">
+                  <div class="img-center bg-img-box5">
+                    <div class="white-frame">
+                      <p class="caption-text">宝の地図</p>
+                      <p class="caption-text sub-caption">（参加冊子）</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="white-frame shadow column-footer">
+                  <div class="img-center bg-img-box6">
+                    <div class="white-frame">
+                      <p class="caption-text">賞品紹介</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row-footer">
+                <div class="white-frame shadow column-footer mr35">
+                  <img class="img-center pt25 pb5" src="img/img_box7.png" />
+                  <p class="caption-text">注意事項</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-two">
+          <div class="contents-box">
+            <div class="content-wrap pt150">
+              <div class="row-footer footer-text-color">
+                <ul class="footer-list">
+                  <li class="pb10">
+                    <span class="left-text">【主催】</span>
+                    <span>青森県</span>
+                  </li>
+                  <li class="pb10">
+                    <span class="left-text">【協力】</span>
+                    <span class="h-line"
+                      >三内丸山遺跡センター / 青森市教育委員会 /
+                      弘前市教育委員会 / 八戸市教育委員会 / つがる市教育委員会 /
+                      七戸町教育委員会 / 外ヶ浜町教育委員会 /
+                      一般社団法人三内丸山遺跡応援隊 /
+                      一般社団法人小牧野遺跡保存活用協議会</span
+                    >
+                  </li>
+                  <li class="pb10">
+                    <span class="left-text">【企画・監修】</span>
+                    <span>タカラッシュ！</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

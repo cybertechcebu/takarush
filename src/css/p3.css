@@ -1,0 +1,236 @@
+/* p3 */
+/* user css */
+a {
+	text-decoration:none;
+}
+.content-wrap {
+	background: url("../img/content-bg.png");
+	background-repeat: repeat-y;
+    width: 100%;
+	padding-bottom: 30px;
+	padding-top: 20px;
+	margin:0 0 50px 0;
+}
+.content-wrap-o {
+	background: url("../img/content-bg-o.png");
+	background-repeat: repeat-y;
+    width: 100%;
+	padding-bottom: 30px;
+	padding-top: 20px;
+	margin:0 0 50px 0;
+}
+.img-banner{
+	margin-bottom:50px;
+}
+.context{
+	background-color:#f9eed4;
+	padding:45px;
+	width:650px;
+	margin:0 auto;
+}
+.context p {
+	color:#510707;
+	font-size:24px;
+}
+
+.triangle::before{
+	content:url('../img/outline_triangle.png'); 
+	position:relative;
+	
+}
+.triangle::after{
+	content:url('../img/outline_triangle.png'); 
+	position:relative;
+	
+}
+.outline::before{
+	content:url('../img/outline_1.png'); 
+	
+	position:relative;
+	
+}
+.outline::after{
+	content:url('../img/outline_1.png'); 
+	position:relative;
+	
+}
+.outline-o::before{
+	content:url('../img/outline_o.png'); 
+	position:relative;
+	
+}
+.outline-o::after{
+	content:url('../img/outline_o.png'); 
+	position:relative;
+	
+}
+.outline-o p{
+	font-weight:bold;
+	font-size:35px;
+	text-align:center;
+	padding:20px 0px 20px 0px;
+}
+.outline-matrix::before{
+	content:url('../img/outline_matrix.png'); 
+	position:relative;
+}
+.outline-matrix::after{
+	content:url('../img/outline_matrix.png'); 
+	position:relative;
+}
+/* color */
+.orange{
+	color:#ec6312 !important; 
+}
+.pink{
+	color:#e8374a !important;
+}
+.violet{
+	color:#693f6f !important;
+}
+.blue-g{
+	color:#176a69 !important;
+}
+.green{
+	color:#3b6331 !important;
+}
+.aqua{
+	color:#43aaa2 !important;
+}
+/* img */
+.center-img{
+	text-align:center;
+	margin: 20px 0 20px 0;
+}
+.b-image-one{
+	border:3px solid #eb630f;
+}
+.b-image-two{
+	border:3px solid #43aaa2;
+}
+
+/* Font Size */
+.fs27{font-size:27px !important;}
+.fs26{font-size:26px !important;}
+.fs28{font-size:28px !important;}
+.fs35{font-size:35px !important;}
+
+/* Margin */
+.ml87{margin-left:87px !important;}
+.mt60{margin-top:60px !important;}
+
+/* text */
+.text-center{
+	text-align:center;
+}
+.text-left{
+	text-align:left;
+}
+.text-right{
+	text-align:right;
+}
+.tdu{
+	text-decoration:underline;
+}
+
+
+/* Text Header */
+.header-one{
+  text-align:center;
+  padding:20px 20px 20px 20px;
+  color:#ffffff;
+  font-size:26px;
+  font-weight:bold;
+  background-color:#eb630f;
+}
+
+.header-two{
+  text-align:center;
+  padding:20px 20px 20px 20px;
+  color:#ffffff;
+  font-size:26px;
+  font-weight:bold;
+  background-color:#43aaa2;
+  margin-top:50px;
+}
+
+.header-three{
+  text-align:center;
+  padding:20px 20px 20px 20px;
+  color:#ffffff;
+  font-size:26px;
+  font-weight:bold;
+  background-color:#510707;
+  margin-top:50px;
+}
+
+.sub-header{
+	padding: 5px 15px 5px 15px;
+	color:#eb630f;
+	border:2px solid #eb630f;
+	font-size:22px;
+	font-weight:bold;
+	text-align:center;
+	display: inline-block;
+	margin:10px 0px 10px 20px;
+}
+
+.sub-header-two{
+	padding: 5px 15px 5px 15px;
+	color:#43aaa2;
+	border:2px solid #43aaa2;
+	font-size:22px;
+	font-weight:bold;
+	text-align:center;
+	display: inline-block;
+	margin:10px 0px 10px 20px;
+}
+.sub-header-three{
+	padding: 5px 15px 5px 15px;
+	color:#510707;
+	border:2px solid #510707;
+	font-size:22px;
+	font-weight:bold;
+	text-align:center;
+	display: inline-block;
+	margin:10px 0px 10px 20px;
+}
+.block-one{
+	float:left;
+	border:3px solid #510707;
+	border-right:none;
+	width:32.5%;
+	text-align:center;
+	background-color: #ffffff;
+}
+.block-two{
+	float:left;
+	border:3px solid #510707;
+	border-right:none;
+	width:32.5%;
+	text-align:center;
+	background-color: #ffffff;
+}
+.block-three{
+	float:left;
+	border:3px solid #510707;
+	width:32.5%;
+	text-align:center;
+	background-color: #ffffff;
+}
+.block-con{
+	margin-top:15px;
+	float:left;
+	width:33.3%;
+	text-align:center;
+	color:#510707;
+	font-size:18px;
+}
+.bor-con{
+	margin:20px 20px 20px 20px;
+	color:#510707;
+	border:2px solid #510707;
+	padding:30px;
+	font-size:18px;
+	line-height:2.3em;
+}

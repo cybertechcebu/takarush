@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+
+ file name  :import.css
+ style info :各cssファイル読み込み用
+=================================================================== */
+
+/* default style - リセット及びbody基本設定
+----------------------------------------------------------- */
+@import url("default.css");
+
+
+/* 汎用共通スタイル
+----------------------------------------------------------- */
+@import url("general.css");
+
+/* all styles */
+@import url("p1.css");
+@import url("p2.css");
+@import url("p3.css");
+@import url("p4.css");
