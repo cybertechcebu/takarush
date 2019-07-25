@@ -72,7 +72,7 @@ button {
     z-index: 2;
     margin-top: -128px;
 }
-.content-wrap.begin {
+.content-wrap.begin, .content-wrap.second {
     margin-bottom: 72px;
 }
 .content-info {
