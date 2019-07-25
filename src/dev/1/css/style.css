@@ -14,6 +14,9 @@
     margin: 0 auto;
 }
 
+button {
+    font-family: "メイリオ","Meiryo",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+}
 /* user css */
     /* colors */
 .mahogany {
@@ -28,6 +31,9 @@
 .christine {
     color: #E15D0E;
 }
+.anakiwa {
+    color: #8ff6ff;
+}
     /* end colors */
     /* helper css */
 .lh2 {
@@ -35,6 +41,9 @@
 }
 .fs24 {
     font-size: 24px;
+}
+.fs26 {
+    font-size: 26px;
 }
     /* end helper css */
 .info-box-event {
@@ -375,4 +384,99 @@
     left: 0;
     right: 0;
     margin: auto;
+}
+.dia-sq {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-bottom-color: #E15D0E;
+    position: relative;
+    top: -10px;
+}
+.dia-sq::after {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-top-color: #E15D0E;
+}
+.btn-ac {
+    border: none;
+    color: #FFF;
+    padding: 5px;;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px;
+    -webkit-box-shadow: 2px 8px 47px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 8px 47px -12px rgba(0,0,0,0.75);
+    box-shadow: 2px 8px 47px -12px rgba(0,0,0,0.75);
+}
+.btn-ac.orng {
+    background: #f18014; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f18014 38%, #e74c0c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f18014 38%,#e74c0c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f18014 38%,#e74c0c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f18014', endColorstr='#e74c0c',GradientType=0 ); /* IE6-9 */
+}
+.btn-ac.blu {
+    background: #7db9e8; /* Old browsers */
+    background: -moz-linear-gradient(top,  #7db9e8 0%, #7db9e8 0%, #1e5799 39%, #1e5799 59%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #7db9e8 0%,#7db9e8 0%,#1e5799 39%,#1e5799 59%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #7db9e8 0%,#7db9e8 0%,#1e5799 39%,#1e5799 59%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+}
+.btn-ac .inner {
+    display: block;
+    border: 2px solid #FFF;
+    border-radius: 8px;
+    padding: 12px;
+}
+.arw-dwn {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-style: solid;
+    border-width: 12px 12px 0 12px;
+    border-color: #ffffff transparent transparent transparent;
+}
+.gmap-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 22px;
+    color: #FFF;
+    background-color: #510707;
+    border-radius: 8px;
+    padding: 4px 20px;
+}
+.dia-sq-cal {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-bottom-color: #24687d;
+    position: relative;
+    top: -10px;
+}
+.dia-sq-cal::after {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-top-color: #24687d;
+}
+.w-org p, .w-blu p, .gmap-link {
+    margin-bottom: 10px;
 }
