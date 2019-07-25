@@ -315,6 +315,7 @@ button {
 }
 .to-rlist {
     font-size: 20px;
+    border-bottom: solid 1px;
 }
 .ovw-contents {
     padding: 0px 10px;
