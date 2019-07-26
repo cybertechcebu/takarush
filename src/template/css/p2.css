@@ -190,6 +190,9 @@ a {
   border-radius:15px;
   margin-left:15px;
   width: 40%;
+  font-size:18px;
+  letter-spacing:1px;
+  line-height:26px;
 }
 .icon1::before{
 	content:url('../img/icon1.png'); 
