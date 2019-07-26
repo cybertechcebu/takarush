@@ -63,6 +63,7 @@ span.img-inline {
 .qtxt-color {
 	color: rgb(24, 106, 101);
 	font-size: 30px;
+	font-weight: bold;
 }
 .atxt-color {
 	color: rgb(232, 55, 74);
