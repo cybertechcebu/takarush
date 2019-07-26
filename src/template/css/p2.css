@@ -32,7 +32,11 @@ a {
 	color:#510707;
 	font-size:24px;
 }
-
+.context-p{
+	font-size:20px !important;
+	letter-spacing:1px;
+	line-height:28px;
+}
 .cha-2 img {
 	width:100%;
 }
