@@ -64,12 +64,16 @@ span.img-inline {
 }
 .qtxt-color {
 	color: rgb(24, 106, 101);
-	font-size: 30px;
 	font-weight: bold;
+	font-size:24px;
+	letter-spacing:1.2px;
+	line-height:32px;
 }
 .atxt-color {
 	color: rgb(232, 55, 74);
-	font-size: 30px;
+	font-size:24px;
+	letter-spacing:1.2px;
+	line-height:32px;
 }
 .bg-orange-tile {
 	background: url("../img/bg_orange_tile.png");
