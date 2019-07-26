@@ -1,0 +1,59 @@
+.onlysm{
+	display:none;
+}
+
+/* =========================================================
+navi
+========================================================= */
+#navi {
+	width:100%;
+	z-index:1001;
+}
+
+#navi .bg_navi {
+	background:url(../img/g_menu_bg.png) bottom center no-repeat;
+
+}
+
+#navi .bg_navi ul {
+	display:flex;
+	justify-content:flex-start;
+	width:1000px;
+	margin:0 auto;
+}
+
+#navi .bg_navi ul li {
+	padding:20px;
+	text-align:center;
+}
+
+#navi .bg_navi ul li a {
+	text-align:center;
+}
+
+#navi .bg_navi ul li img {
+	vertical-align:middle;
+}
+
+
+.anker{
+	padding-top:50px;
+	
+}
+
+.anker .anker_link{
+	margin-top:-50px;
+	
+}
+
+
+#pagetop {
+	position: fixed;
+	bottom: -100px;
+	right: 20px;
+	z-index:1001;
+}
+
+.lock_navi{
+	display:none;
+}
