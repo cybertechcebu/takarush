@@ -1,0 +1,192 @@
+.onlypc{
+	display:none;
+}
+
+/* =========================================================
+navi
+========================================================= */
+.lock_navi{
+	position:fixed;
+	bottom:0px;
+	width:100%;
+	background:#fff;
+	padding:5% 0;
+	z-index:1001;
+}
+
+.lock_navi ul{
+	width:100%;
+	margin:0 auto;
+	display:flex;
+	justify-content:space-around;
+	position:relative;
+}
+
+.lock_navi ul .f_navi1{
+	width:43%;
+	text-align:center;
+}
+
+.lock_navi ul .f_navi2{
+	width:55%;
+	text-align:center;
+}
+
+
+.lock_navi ul li img{
+	width:90%;
+}
+
+#pagetop2 {
+	position: absolute;
+	bottom: 70px;
+	right: -100px;
+}
+
+#pagetop2 img{
+	width:60px;
+}
+
+
+/*※ナビゲーションのメニューまわり変更箇所*/
+.modal-content_headermenu li{
+	text-align:center;
+	background-color:#000;
+	font-size:16px;
+	border:#fff 1px solid;
+	margin-bottom:6%;
+	padding:5% 0;
+}
+.modal-content_headermenu li a{
+	color: #fff;
+}
+
+
+.modal-content_headermenu li.kuroshima_link{
+	text-align:center;
+	background-color:#be1517;
+	font-size:16px;
+	border:#fff 1px solid;
+	margin-bottom:6%;
+	padding:5% 0;
+}
+.modal-content_headermenu li.kuroshima_link a{
+	color: #fff;
+}
+
+.sm_navi{
+	width:15%;
+}
+
+.sm_navi img{
+	width:100%;
+
+}
+
+/***ポップアップナビゲーション***/
+.modal-overlay {
+    z-index:10006;
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:120%;
+    background-color:rgba(0,0,0,0.75);
+}
+.modal-wrap {
+    z-index:10007;
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+}
+.modal-open {
+    color:#00f;
+    text-decoration:underline;
+}
+.modal-open:hover {
+    cursor:pointer;
+    color:#f00;
+}
+.modal-content_headermenu {
+    position:relative;
+    display:none;
+    width:100%;
+    margin:0 auto;
+    padding:10px 0;
+	background-size:100%;
+	z-index:10002;
+	overflow:auto;
+}
+.modal-content_headermenu ul{
+	width:96%;
+	margin:0 auto;
+}
+.modal-content_headermenu li img{
+	width:90%;
+}
+.modal-content_headermenu p {
+    margin:0;
+    padding:0;
+}
+.modal-content_headermenu .modal-close-wrap {
+	padding:0 20px 0 0;
+}
+.modal-content_headermenu .modal-close {
+	width:36px;
+	height:36px;
+}
+.head_search_date_calendar_wrap{
+	width:260px;
+	margin:5px auto;
+	position:relative;
+}
+.head_search_date_calendar_wrap table{
+	border: #f4f4f4 solid 4px;
+}
+.head_search_date_calendar_wrap table td{
+	border:#FFF solid 1px;
+	border-collapse:collapse;
+}
+.head_search_btn_area_wrap{
+	padding:10px;
+}
+.modal-content_topmain {
+    position:relative;
+    display:none;
+    width:90%;
+    margin:20px auto;
+    padding:20px 0;
+    background-color:rgba(255,255,255,0.8);
+	z-index:10002;
+	border-radius:10px;
+}
+.sm_top_main_area_wrap {
+	padding:10px 0;
+	width:270px;
+	margin:0 auto;
+}
+.modal-content_topmain .top_main_close{
+	position:absolute;
+	top:-15px;
+	right:-10px;
+}
+.modal-content_app .modal-close-wrap {
+	padding:0 20px 0 0;
+}
+.modal-content_app .modal-close {
+	width:36px;
+	height:36px;
+}
+.modal-open {
+    color:#00f;
+    text-decoration:underline;
+}
+.modal-open:hover {
+    cursor:pointer;
+    color:#f00;
+}
