@@ -61,6 +61,9 @@ span.img-inline {
 }
 .bullet li {
 	list-style-type: square !important;
+	font-size:18px !important;
+	letter-spacing:1px;
+	line-height:26px;
 }
 .qtxt-color {
 	color: rgb(24, 106, 101);
