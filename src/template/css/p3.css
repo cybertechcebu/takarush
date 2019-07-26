@@ -195,6 +195,11 @@ a {
 	display: inline-block;
 	margin:10px 0px 10px 20px;
 }
+.p3-sub-con {
+	font-size:24px !important;
+	letter-spacing:1.2px;
+	line-height:32px;
+}
 .block-one{
 	float:left;
 	border:3px solid #510707;
